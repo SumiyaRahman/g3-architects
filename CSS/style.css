@@ -29,7 +29,7 @@
     line-height: 26px;
 }
 .nav-menu-margin{
-    margin-right: 5rem;
+    margin-right: 3rem;
 }
 .text-center{
     text-align: center;
@@ -45,6 +45,8 @@
 }
 /* header styles */
 .header{
+    /* width: 1536px;
+    height: 1057.6px; */
     padding: 3.1rem 0;
 }
 /* navbar styles */
@@ -80,6 +82,39 @@
     margin-top: 32px;
 }
 .banner-img{
+    width: 100%;
     justify-content: center;
     margin-top: 3.1rem;
+}
+.banner-img-fluid{
+    width: 100%;
+}
+
+/* responsive media qurey */
+
+/* small devices */
+@media screen and (max-width:576px ) {
+    .navbar{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .nav-menu{
+        margin-top: 20px;
+    }
+    .banner{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px){
+    .navbar{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .nav-menu{
+        margin-top: 20px;
+    }
+    .banner{
+        padding: 0 10px;
+    }
 }

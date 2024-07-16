@@ -114,9 +114,6 @@ main{
 .feature-images img{
     width: 100%;
 }
-.feature-content{
-    max-width: 537px;
-}
 .feature-title{
     font-size: 2.8rem;
     font-weight: 700;
@@ -139,14 +136,19 @@ main{
 .some-fact > .section-sub-texts{
     margin-top: 24px;
 }
+.fact-main-container{
+    display: flex;
+    justify-content: center;
+}
 .fact-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     margin-top: 6.3rem;
-    gap: 7.76rem;
+    gap: 124.17px;
 }
 .fact-card{
     width: 240px;
+    height: 240px;
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 45px 35px;
@@ -160,31 +162,71 @@ main{
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+/* our sponsor */
+.our-sponsors{
+    margin-top: 11.3rem;
+}
+.our-sponsors > .section-sub-texts{
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.brand-container{
+    display: flex;
+    justify-content: center;
+}
+.sponsor-brand{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 124.17px;
+}
+.sponsor-brand img{
+    filter: grayscale(100%);
+}
+
+/* footer */
+footer{
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    padding: 130px 0;
+
+}
+footer div{
+    background: rgb(255, 244, 231);
+    border-radius: 8px;
+    padding: 39px 410px;
+}
 /* responsive media qurey */
 
 /* small devices */
 @media screen and (max-width:576px ) {
     .navbar{
         flex-direction: column;
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
     .nav-menu{
         margin-top: 20px;
     }
-    .banner{
+    /* .banner{
         padding: 0 10px;
-    }
+    } */
     .feature{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .feature-images, .fact-container{
         grid-template-columns: repeat(1,1fr);
     }
-    .feature-content{
+    /* .feature-content{
         padding-left: 10px;
-    }
-    .some-fact{
+    } */
+    /* .some-fact{
         padding: 0 10px;
+    } */
+    .sponsor-brand, .fact-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
     }
 }
 
@@ -197,13 +239,18 @@ main{
     .nav-menu{
         margin-top: 20px;
     }
-    .banner{
+    /* .banner{
         padding: 0 10px;
-    }
+    } */
     .feature{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-    .feature-images, .fact-container{
+    .feature-images{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sponsor-brand, .fact-container{
         grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        row-gap: 24px;
     }
 }

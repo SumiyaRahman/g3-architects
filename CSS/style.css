@@ -186,17 +186,17 @@ main{
 
 /* footer */
 footer{
+    background: rgb(255, 244, 231);
+    border-radius: 8px;
     margin: 0 auto;
     max-width: 1440px;
     display: flex;
     justify-content: center;
-    padding: 130px 0;
-
+    margin-top: 130px;
+    margin-bottom: 130px;
 }
-footer div{
-    background: rgb(255, 244, 231);
-    border-radius: 8px;
-    padding: 39px 410px;
+footer p{
+    padding: 38px 0;
 }
 /* responsive media qurey */
 
@@ -209,21 +209,15 @@ footer div{
     .nav-menu{
         margin-top: 20px;
     }
-    /* .banner{
-        padding: 0 10px;
-    } */
     .feature{
         flex-direction: column-reverse;
     }
     .feature-images, .fact-container{
         grid-template-columns: repeat(1,1fr);
     }
-    /* .feature-content{
-        padding-left: 10px;
-    } */
-    /* .some-fact{
-        padding: 0 10px;
-    } */
+    .some-fact > .section-title, .some-fact > .section-sub-texts, .feature-content{
+        text-align: center;
+    }
     .sponsor-brand, .fact-container{
         grid-template-columns: repeat(1,1fr);
         gap: 24px;
@@ -239,9 +233,6 @@ footer div{
     .nav-menu{
         margin-top: 20px;
     }
-    /* .banner{
-        padding: 0 10px;
-    } */
     .feature{
         flex-direction: column-reverse;
     }
@@ -252,5 +243,9 @@ footer div{
         grid-template-columns: repeat(2,1fr);
         justify-content: space-between;
         row-gap: 24px;
+    }
+    
+    .some-fact > .section-title, .some-fact > .section-sub-texts, .feature-content{
+        text-align: center;
     }
 }
